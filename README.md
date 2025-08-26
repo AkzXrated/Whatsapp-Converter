@@ -82,7 +82,7 @@ Follow these steps to get the application running on your local machine.
 The script uses `ffmpeg` with a carefully selected set of parameters to perform a two-pass video encode.
 
 * **Two-Pass Encoding:** The first pass analyzes the video to determine the optimal way to distribute the bitrate. The second pass uses this information to perform the actual encoding, resulting in a much more efficient and higher-quality file compared to a single pass.
-* **`veryslow` Preset:** This setting tells the `x264` encoder to use its most advanced algorithms to maximize compression efficiency. It takes longer, but for a powerful PC like a Ryzen 5800x, it delivers a noticeable quality improvement without increasing the file size.
+* **`veryslow` Preset:** This setting tells the `x264` encoder to use its most advanced algorithms to maximize compression efficiency.
 * **Bitrate Control:** The video bitrate is capped at `3100k` with a max rate of `3200k`. This is a sweet spot that provides excellent quality for 1080p-scaled video while staying within the limits that WhatsApp is less likely to re-compress.
 * **Smart Filters (`-vf`):** The script dynamically generates a filter chain that first crops the video (if selected) and then scales it to the target resolution, ensuring no distortion.
 
