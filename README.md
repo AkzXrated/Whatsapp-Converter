@@ -1,7 +1,6 @@
 # WhatsApp Video Converter HD
 
-![App Screenshot](<img width="1860" height="1468" alt="{EE598BC5-77A7-4317-9F0E-92451AF56626}" src="https://github.com/user-attachments/assets/35d469c0-dde2-458e-b9bd-8b283894133a" />)
-
+![App Screenshot](./assets/app-screenshot.png)
 
 A sleek, modern desktop application designed to convert your videos into a high-quality format that bypasses WhatsApp's aggressive video compression. Send videos that look sharp and clear, exactly as you intended.
 
@@ -68,11 +67,15 @@ Follow these steps to get the application running on your local machine.
     python main.py  # Or whatever you name the main script
     ```
 
-5.  **Start Converting!**
+5.  **Convert your video(s):**
     * Drag and drop your video files into the window.
     * Select your desired aspect ratio.
     * Click "▶️ Start Conversion".
     * The converted files will be saved in the same directory as the original files, with `_whatsapp` appended to the filename.
+
+6.  **Send the Video!**
+    * **⚠️ Important:** To ensure the video is not re-compressed, you **must** send the converted file using **WhatsApp Web** in your browser.
+    * Sending the video from the mobile app or the Windows/macOS desktop app will likely trigger WhatsApp's compression algorithm again, defeating the purpose of this tool.
 
 ## ⚙️ How It Works
 
